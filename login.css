@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./assets/loginbg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+form{
+    width: 400px;
+    height: 450px;
+    background-color: rgba(255, 255, 255, 0.60);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 26px;
+    margin-bottom: 44px;
+}
+input[type=text]{
+    width: 350px;
+    height: 45px;
+    border: none;
+    margin-bottom: 14px;
+    border-radius: 8px;
+    padding-left: 22px;
+}
+.oneline{
+    display: flex;
+    align-self: self-start;
+    margin-left: 15px;
+    margin-bottom: 44px;
+}
+input[type=checkbox]{
+    height: 16px;
+    width: 16px;
+    border: 1px solid #D2CEDD;
+    
+}
+label{
+    color: #4C4B4B;
+    font-size: 14px;
+    margin-left:4px ;
+}
+button{
+    width: 350px;
+    height: 45px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background-color: #2E3192;
+    cursor: pointer;
+}

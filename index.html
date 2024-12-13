@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="main">
+      <form action="" id="loginForm">
+        <div class="logo">
+          <img src="./assets/logo.png" alt="logo" />
+        </div>
+        <input type="text" placeholder="Email" id="email" required />
+        <input type="text" placeholder="Password" id="password" required />
+        <div class="oneline">
+          <input type="checkbox" id="rememberMe" />
+          <label for="rememberMe">Remember me</label>
+        </div>
+        <button type="submit">Log In</button>
+      </form>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .getElementById("loginForm")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+            const rememberMe = document.getElementById("rememberMe").checked;
+
+            // You can add your form submission logic here
+            console.log("Email:", email);
+            console.log("Password:", password);
+            console.log("Remember me:", rememberMe);
+
+            // Example: AJAX request to server
+            fetch("your-server-endpoint", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({ email, password, rememberMe }),
+            })
+              .then((response) => response.json())
+              .then((data) => {
+                console.log("Success:", data);
+                // Handle success
+              })
+              .catch((error) => {
+                console.error("Error:", error);
+                // Handle error
+              });
+          });
+      });
+    </script>
+  </body>
+</html>
