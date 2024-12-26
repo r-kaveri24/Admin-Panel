@@ -4,9 +4,161 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="testimonial.css" />
   </head>
   <body>
     <div id="navbar-placeholder"></div>
     <script src="loadNavbar.js"></script>
+    <div class="main">
+      <div class="testimonial-main">
+        <div class="containt">
+          <div class="create-testimonial">
+            <h2>Create New Testimonials</h2>
+            <form action="">
+              <div class="left">
+                <p>Name</p>
+                <input type="text" />
+                <p>Discription</p>
+                <input type="text" style="height: 100px" />
+                <p>Designation</p>
+                <input type="text" />
+                <p>Ratings</p>
+                <div class="stars">
+                  <svg
+                    width="28"
+                    height="27"
+                    viewBox="0 0 28 27"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.3566 2.88412L14 1.78647L13.6434 2.88412L11.0334 10.9168H2.58732H1.43319L2.3669 11.5952L9.19991 16.5596L6.58993 24.5923L6.23328 25.69L7.167 25.0116L14 20.0471L20.833 25.0116L21.7667 25.69L21.4101 24.5923L18.8001 16.5596L25.6331 11.5952L26.5668 10.9168H25.4127H16.9666L14.3566 2.88412Z"
+                      stroke="#262525"
+                      stroke-width="0.75"
+                    />
+                  </svg>
+
+                  <svg
+                    width="28"
+                    height="27"
+                    viewBox="0 0 28 27"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.3566 2.88412L14 1.78647L13.6434 2.88412L11.0334 10.9168H2.58732H1.43319L2.3669 11.5952L9.19991 16.5596L6.58993 24.5923L6.23328 25.69L7.167 25.0116L14 20.0471L20.833 25.0116L21.7667 25.69L21.4101 24.5923L18.8001 16.5596L25.6331 11.5952L26.5668 10.9168H25.4127H16.9666L14.3566 2.88412Z"
+                      stroke="#262525"
+                      stroke-width="0.75"
+                    />
+                  </svg>
+
+                  <svg
+                    width="28"
+                    height="27"
+                    viewBox="0 0 28 27"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.3566 2.88412L14 1.78647L13.6434 2.88412L11.0334 10.9168H2.58732H1.43319L2.3669 11.5952L9.19991 16.5596L6.58993 24.5923L6.23328 25.69L7.167 25.0116L14 20.0471L20.833 25.0116L21.7667 25.69L21.4101 24.5923L18.8001 16.5596L25.6331 11.5952L26.5668 10.9168H25.4127H16.9666L14.3566 2.88412Z"
+                      stroke="#262525"
+                      stroke-width="0.75"
+                    />
+                  </svg>
+
+                  <svg
+                    width="28"
+                    height="27"
+                    viewBox="0 0 28 27"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.3566 2.88412L14 1.78647L13.6434 2.88412L11.0334 10.9168H2.58732H1.43319L2.3669 11.5952L9.19991 16.5596L6.58993 24.5923L6.23328 25.69L7.167 25.0116L14 20.0471L20.833 25.0116L21.7667 25.69L21.4101 24.5923L18.8001 16.5596L25.6331 11.5952L26.5668 10.9168H25.4127H16.9666L14.3566 2.88412Z"
+                      stroke="#262525"
+                      stroke-width="0.75"
+                    />
+                  </svg>
+                  <svg
+                    width="28"
+                    height="27"
+                    viewBox="0 0 28 27"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.3566 2.88412L14 1.78647L13.6434 2.88412L11.0334 10.9168H2.58732H1.43319L2.3669 11.5952L9.19991 16.5596L6.58993 24.5923L6.23328 25.69L7.167 25.0116L14 20.0471L20.833 25.0116L21.7667 25.69L21.4101 24.5923L18.8001 16.5596L25.6331 11.5952L26.5668 10.9168H25.4127H16.9666L14.3566 2.88412Z"
+                      stroke="#262525"
+                      stroke-width="0.75"
+                    />
+                  </svg>
+                </div>
+                <div class="buttons">
+                  <button id="submit">Submit</button>
+                </div>
+              </div>
+              <div class="upload-img">
+                <h4>Upload Profile Image</h4>
+                <div class="upload-box">
+                  <img
+                    src="./testimonial-assets/upload.png"
+                    alt="Upload Preview"
+                  />
+                </div>
+                <span> Upload Image <input type="file" /></span>
+              </div>
+            </form>
+          </div>
+          <div class="testimonial-list">
+            <h2>Testimonials list</h2>
+            <div class="table-container">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Sr.No</th>
+                    <th>Profile</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Designation</th>
+                    <th>Review</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="popup" id="popup" style="display: none">
+            <button id="close-popup">
+              <img src="./assets-hero/close.png" alt="" />
+            </button>
+            <p>Are you sure you want to delete?</p>
+            <div class="buttons-pop">
+              <button class="close" id="cancel-btn">Cancel</button>
+              <button class="delete" id="confirm-delete">Delete</button>
+            </div>
+          </div>
+          <div class="overlay" id="overlay" style="display: none"></div>
+          <div class="modal" style="display: none">
+            <button id="close-image-modal">
+                <img src="./assets-hero/close.png" alt="Close" />
+            </button>
+            <div class="info">
+                <img src="" alt="Profile Image">
+                <div>
+                  <p class="disc"></p>
+                <p class="name"></p>
+                </div>
+                <h4></h4>
+                <div class="rating"></div>
+            </div>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <script src="testimonial.js"></script>
   </body>
 </html>

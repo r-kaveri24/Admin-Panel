@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 72px;
+    left: 240px;
+    background-color: #FFF0FF;
+    width: 84%;
+    height: 89.6vh;
+
+}
+
+.testimonial-main {
+    height: 90%;
+    width: 1112px;
+    overflow-y: scroll;
+}
+
+.containt {
+    height: 1032px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.create-testimonial {
+    width: 100%;
+    height: fit-content;
+}
+
+.create-testimonial form {
+    width: 80%;
+    margin-left: 65px;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.left {
+    width: 417px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.create-testimonial h2 {
+    margin: 34px 64px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.6px;
+}
+
+.left p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #262525;
+}
+
+.left input {
+    width: 95%;
+    height: 50px;
+    border-radius: 6px;
+    /* box-shadow: 0px 0px 11px 0px #00000033 inset; */
+    border: 1px solid black;
+    cursor: pointer;
+    padding-left: 20px;
+}
+
+.stars svg {
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.buttons button {
+    height: 46px;
+    width: 136px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5px;
+    cursor: pointer;
+}
+
+.buttons button img {
+    width: 24px;
+    height: 24px;
+}
+
+#submit {
+    background-color: #804499;
+}
+
+#Preview {
+    background-color: #2E3192;
+}
+
+.upload-img {
+    width: 198px;
+    height: 274px;
+    box-shadow: 0px 0px 4px 0px #00000040;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+    position: relative;
+}
+
+.upload-img h4 {
+    font-size: 16px;
+}
+
+.upload-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 165px;
+    height: 128px;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='8' ry='8' stroke='%23262525FF' stroke-width='2' stroke-dasharray='10' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+    border-radius: 8px;
+}
+
+.upload-img span {
+    width: 150px;
+    height: 39px;
+    border-radius: 34px;
+    background-color: #2E3192;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upload-img input {
+    position: absolute;
+    top: 216;
+    left: 0;
+    width: 150px;
+    /* Match the span's width */
+    height: 39px;
+    opacity: 0;
+    cursor: pointer;
+    /* Ensure clicking works */
+}
+
+.testimonial-list {
+    width: 100%;
+    margin-top: 35px;
+    /* padding-left: 45px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.testimonial-list h2 {
+    padding-left: 65px;
+    font-size: 18px;
+    align-self: self-start;
+}
+
+.table-container {
+    width: 90%;
+    height: 361px;
+    border: 1px solid #CCC9C9;
+    border-radius: 8px;
+    overflow: auto;
+}
+
+.table-container {
+    width: 90%;
+    height: 361px;
+    border: 1px solid #CCC9C9;
+    border-radius: 8px;
+    overflow: auto;
+    /* Ensure the container can scroll */
+}
+
+.testimonial-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    padding-left: 10px;
+    height: 65px;
+    background-color: white;
+    /* Ensure the header has a background */
+}
+
+tbody tr {
+    border: 1px solid #ddd;
+    text-align: left;
+    height: 70px;
+
+}
+
+tbody td {
+    padding-left: 10px;
+}
+
+.view-btn,
+.delete-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    height: 100%;
+    width: 30px;
+}
+
+.view-btn img,
+.delete-btn img {
+    height: 24px;
+    width: 24px;
+}
+
+
+.popup {
+    width: 425px;
+    height: 238px;
+    position: fixed;
+    border-radius: 6px;
+    background-color: white;
+    top: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 999999;
+}
+
+.popup button {
+    align-self: flex-end;
+    cursor: pointer;
+    margin-top: 17px;
+    background: none;
+    border: none;
+}
+
+.popup img {
+    width: 26px;
+    height: 26px;
+    margin-right: 12px;
+}
+
+.popup p {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 35px;
+}
+
+.buttons-pop {
+    display: flex;
+    gap: 28px;
+    margin-top: 45px;
+}
+
+.buttons-pop button {
+    width: 98px;
+    height: 34px;
+    font-size: 16px;
+    font-weight: 500;
+    background: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.buttons-pop .close {
+    border: 1.12px solid #262525
+}
+
+.buttons-pop .delete {
+    background-color: #EA2929;
+    color: white;
+}
+
+.blurred {
+    filter: blur(5px);
+    pointer-events: none;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.modal {
+    position: fixed;
+    top: 90px;
+    left: 650px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.modal img {
+    max-width: 1150px;
+    width: 100%;
+    max-height: 544px;
+    height: 100%;
+}
+
+#close-image-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    background-color: #804499;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.modal {
+    position: fixed;
+    top: 90px;
+    left: 650px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 272px;
+    height: 291px;
+    border-radius: 6px;
+}
+
+.modal .info {
+    margin-left: 23px;
+    margin-top: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.info img {
+    width: 69px;
+    height: 69px;
+    border-radius: 50%;
+}
+
+.info .disc {
+    width: 233px;
+    height: 70px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.4px;
+    color: #262525;
+    overflow: hidden;
+}
+
+.info .name {
+    font-weight: 700;
+    font-size: 18px;
+    color: #262525;
+}
+
+.info h4 {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.4px;
+}
+
+#close-image-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    background-color: #804499;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.description-cell {
+    width: 300px;
+    max-width: 300px;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
