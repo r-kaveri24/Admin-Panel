@@ -24,6 +24,7 @@ img{
     height: 67px;
 }
 .left-navbar{
+    position:  fixed; /*changed by amit */
     width: 240px;
     height: 85.3vh;
     background-color: #804499;
