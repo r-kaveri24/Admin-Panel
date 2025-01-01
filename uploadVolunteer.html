@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="team.css" />
+  </head>
+  <body>
+    <div id="navbar-placeholder"></div>
+    <script src="loadNavbar.js"></script>
+
+    <div class="main">
+      <div class="teamContainer">
+        <form id="volunteerForm" class="uploadTeamMember">
+          <div class="uploadTeamHeading">
+            <p>Upload Volunteer Member</p>
+          </div>
+          <div class="uploadTeamName">
+            <label for="name">Name</label>
+            <input type="text" id="nameVolunteer" />
+          </div>
+          <div class="uploadTeamDesignation">
+            <label for="designation">Designation</label>
+            <input type="text" id="designationVolunteer" />
+          </div>
+
+          <div class="uploadTeamUploadImg">
+            <label for="image" class="custom-upload">
+              <input type="file" id="image" accept="image/*" required />
+            </label>
+          </div>
+
+          <button type="submit" class="UploadTeamSubmitBtn submitBtn">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="volunteer.js"></script>
+  </body>
+</html>

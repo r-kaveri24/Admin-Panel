@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="team.css" />
+  </head>
+  <body>
+    <div id="navbar-placeholder"></div>
+    <script src="loadNavbar.js"></script>
+
+    <div class="main">
+      <div class="teamContainer">
+        <!-- upload img section -->
+        <div class="ourTeam-UploadSec">
+          <button
+            onclick="handleOurTeam()"
+            id="ourTeamBtn"
+            class="outTeamBtn cursor-pointer">
+            Our Volunteer
+            <img id="down" src="./assets-navbar/down-arrow.png" alt="" />
+          </button>
+          <div id="dropdownContent" class="dropdown-Content">
+            <a href="./team.html">Our Team</a>
+            <a href="./ourVolunteer.html">Our Volunteer</a>
+          </div>
+          <a
+            href="./uploadVolunteer.html"
+            class="uploadImg-container cursor-pointer">
+            <img src="./assets-hero/upload.png" alt="" />
+            <label class="uploadImg">Upload</label>
+          </a>
+        </div>
+        <!-- preview img section -->
+        <div class="previewSection">
+          <p class="previewHeading">Preview</p>
+          <div id="images" class="images"></div>
+        </div>
+        <!-- uploaded images in table format  -->
+        <div id="images" class="uploadedImgContainer">
+          <table class="uploadedImg">
+            <thead>
+              <tr class="tableheading fontFamily-lato">
+                <th>Sr.No</th>
+                <th>Profile</th>
+                <th class="me-165px">Name</th>
+                <th>Designation</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody" class="border-none tableBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="volunteer.js"></script>
+  </body>
+</html>

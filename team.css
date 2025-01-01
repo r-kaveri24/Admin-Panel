@@ -1,0 +1,360 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+  
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 72px;
+  left: 240px;
+  background-color: #fff0ff;
+  height: 89.6vh;
+  width: 84.3%;
+}
+.teamContainer {
+  width: 1112px;
+  height: 935px;
+  margin-top: 300px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+
+
+.UploadedtableRow td{
+    padding-left: 40px;
+    border-bottom: 0.2px solid rgb(192, 192, 192);
+    
+}
+
+.ourTeam-UploadSec {
+  width: 903px;
+  height: 46px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 54px;
+  position: relative;
+
+}
+.outTeamBtn {
+    width: 163px;
+    height: 46px;
+  background-color: #804499;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+}
+.outTeamBtn img {
+  width: 12px;
+  height: 6px;
+  margin-left: 5px;
+}
+.dropdown-Content{
+    display: none;
+    width: 163px;
+    height: 93px;
+    background-color: white;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.6px;
+    position: absolute;
+    top: 100%;
+    bottom: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#dropdownContent a{
+     width: 163px;
+     height: 46px;
+    display: flex;
+    align-items: center;
+   justify-content: center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.6px;
+    text-decoration: none;
+    color: black;
+}
+
+.show{
+    display: block;
+}
+
+#down{
+    transition: transform 0.4s ease-in-out;
+}
+.up{
+    transform: rotate(-180deg);
+   -webkit-transform: rotate(-180deg);
+   
+}
+
+
+
+.uploadImg-container {
+
+  width: 136px;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.uploadImg{
+  width: 51px;
+  height: 19px;
+  margin-left: 10px;
+}
+.uploadImg-container img{
+  width: 24px;
+  height: 24px;
+  
+}
+.previewSection{
+    width: 905px;
+    height:300.77px;
+    margin-top: 27px;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.previewHeading{
+    width: 905px;
+    height: 22px;
+    font-family: Lato,sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.6px;
+
+}
+
+.images{
+    width: 100%;
+    height: 245.77px;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+.images div{
+  margin:0 30px 0 10px;
+}
+
+.preview-image{
+  width: 126.7px;
+  height: 150.08px;
+  
+}
+
+
+.uploadedImgContainer{
+    width: 837px;
+    height: 433px;
+    margin-top: 60px;
+    border: 1px solid grey;
+    overflow-y: scroll;
+    border-radius: 10px;
+}
+
+
+.tableheading {
+  background-color: white;
+  color: #333; 
+  text-align: left; 
+  font-weight: bold; 
+  padding: 10px; 
+  border-bottom: 2px solid #ddd; 
+}
+.uploadedImg th {
+  height: 65px;
+  padding: 10px;
+  font-size: 16px; 
+  
+}
+
+.uploadedImg {
+  width: 100%; 
+  border-collapse: collapse; 
+  border: 1px solid #ffffff; 
+  
+}
+
+
+
+.penImg{
+  background-image: url('/Admin-Panel/assests-team/previewPen.png');
+  width: 24px;
+  height: 24px;
+  border: none;
+}
+.deleteImg{
+  background-image: url('/Admin-Panel/assets-hero/delete.png');
+  width: 24px;
+  height: 24px;
+  border: none;
+}
+
+
+
+
+/* teams members photo upload section */
+.uploadTeamMember{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    
+}
+.uploadTeamHeading{
+    width: 905px;
+    height: 22px;
+    font-family: Lato;
+    font-size: 23px;
+    font-weight: 500;
+}
+.uploadTeamName  {
+    width: 471px;
+    height: 80px;
+}
+.uploadTeamName  label{
+    width: 85px;
+    height: 19px;
+    display: block !important;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.2px;
+}
+.uploadTeamName  input{
+    width: 471px;
+    height: 50px;
+    border-radius: 10px;
+}
+.uploadTeamDesignation{
+    width: 471px;
+    height: 80px;
+}
+.uploadTeamDesignation input{
+  
+    width: 471px;
+    height: 50px;
+    border-radius: 10px;
+}
+.uploadTeamUploadImg {
+  width: 233px;
+  height: 68px;
+  background-image: url('assests-team/fileUpload.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.uploadTeamUploadImg input {
+  display: none; /* Hides the default file input */
+}
+
+.custom-upload {
+  width: 233px;
+  height: 68px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+.UploadTeamSubmitBtn{
+    width: 136px;
+    height: 46px;
+    background-color: #804499;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+#name #designation{
+   border: none;
+}
+
+
+
+
+
+
+
+
+.text-white{
+  color: white;
+}
+
+.p-10{
+  padding: 20px;
+}
+.py-5{
+  padding: 5px 0;
+}
+.py-5{
+  padding: 5px 0 ;
+}
+
+.m-auto{
+  margin: auto;
+}
+.flex-direction-col{
+  flex-direction: column;
+}
+.d-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rounded{
+  border-radius: 50%;
+}
+.rounded-1{
+  border-radius: 10px;
+}
+.border-none{
+  border: none;
+}
+.border{
+    border: 1px solid black;
+
+}
+.box-shadow{
+  
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3), -2px 0 10px rgba(0, 0, 0, 0.3);
+
+}
+.fontFamily-lato{
+    font-family: Lato,sans-serif;
+}
+.me-165px{
+    margin-right: 165px;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+
+
